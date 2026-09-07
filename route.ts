@@ -1,0 +1,3 @@
+import {NextResponse} from 'next/server'
+import {MercadoPagoConfig,Preference} from 'mercadopago'
+export async function POST(req:Request){try{const body=await req.json();const client=new MercadoPagoConfig({accessToken:process.env.MERCADOPAGO_ACCESS_TOKEN!});const pref=new Preference(client);const base=process.env.NEXT_PUBLIC_SITE_URL!;const r=await pref.create({body:{items:body.items,currency_id:'ARS',back_urls:{success:`${base}/?payment=success`,failure:`${base}/?payment=failure`,pending:`${base}/?payment=pending`},auto_return:'approved'}});return NextResponse.json({init_point:r.init_point})}catch{return NextResponse.json({error:'No se pudo crear el pago'},{status:400})}}
