@@ -118,7 +118,7 @@ export default function Home() {
           borderTop: "1px solid #333",
           color: "#aaa",
         }}
-      >
+      > 
         <p>RyM Trenzas & Insumos</p>
         <p>Pedidos: 11 2254-2430</p>
         <p>Consultas: 11 5369-2561</p>
