@@ -67,7 +67,7 @@ export default function Home() {
           Todo lo que necesitás para tus trenzas.
         </p>
 
-        <p>Compra online · Retiro local · Atención por WhatsApp</p>
+        <p>Compra online · Retiro local · Atención por WhatsApp · VERSIÓN NUEVA</p>
       </section>
 
       <section style={{ padding: "40px 20px", maxWidth: "1100px", margin: "auto" }}>
